@@ -25,7 +25,6 @@ export default function App() {
       barStyle= 'light-content' 
       backgroundColor='transparent'
       translucent
-
     />
     <View style={{
       flex: 1,
@@ -42,7 +41,6 @@ export default function App() {
           fontWeight: 'bold',
           marginTop: 48,
         }}
-
         >Lista de Atividades
         </Text>
       </View>
@@ -67,7 +65,6 @@ export default function App() {
           onChangeText={setTarefaName}
           value={tarefaName}
         />
-
         <TouchableOpacity style={{
           width: 56,
           height: 56,
@@ -81,18 +78,18 @@ export default function App() {
           <Text style={{
             color: '#FFF',
             fontSize: 24
-
           }}
           >
             Add
           </Text>
         </TouchableOpacity>
       </View>
-
+      
       <FlatList
         data={lisTarefa}
         keyExtractor={item => item}
         renderItem={({ item, index }) => (
+
           <View style={{
             width: '100%',
             backgroundColor: '#363636',
